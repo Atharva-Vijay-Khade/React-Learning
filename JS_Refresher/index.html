@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict";
+        let a = "my name is atharva"
+        console.log(a)
+
+        function hello(number) {
+            console.log("Todays number is "+number)
+        }
+
+        let obj = {
+            a : 1,
+            b : 2,
+            c : function hello(number) {
+                console.log("Last days number was "+number)
+            }
+        }
+
+        document.addEventListener("click", function click() {
+            console.log("I am atharva")
+            //alert("hello")
+            let cnf = confirm("Are you sure?")
+            console.log(cnf)
+        })
+
+        let arr = [31,23,43,23]
+        arr.forEach(element => {
+            console.log(element)
+        })
+        //or
+        // for (let index = 0; index < array.length; index++) {
+        //     const element = array[index];
+            
+        // }
+        
+        // window object
+        console.log(this)
+
+        // No window object, its own this
+        function test() {
+            console.log(this)
+        }
+
+        // window object, original preserved
+        let testArrow = () => {
+            console.log(this)
+        }
+
+        setTimeout(() => {
+            console.log("3000 ms finished")
+        }, 3000);
+        console.log("I am after timeout")
+
+    </script>
+</head>
+<body>
+    I am learning js
+</body>
+</html>
