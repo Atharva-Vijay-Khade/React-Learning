@@ -98,6 +98,48 @@
     Note: In react components can be function based or class based components.  
     Earlier, create-react-app used to use class based components.  
       
+## Understanding JSX  
+    The public folder has a file called index.html, and the src folder has a file called, index.js  
+    index.js is an entry point, and it has a code where we render the App component from the App.js  
+    so whatever components are rendered that's coming from the App.js, and this rendering is actually sent  
+    to the index.html in the public folder in the element with ID = root, which is a div, this is how the  
+    entire flow is working.  
+      
+    So, after npm start is, actually whatever components are their in App.js those are actually rendered.  
+      
+    React App has 2 types of components, function based and class based, class based components where used earlier,  
+    and now a days function based components are used, in modern Javascript.  
+      
+    JSX is a React extension to the JavaScript language syntax which provides a way to structure component rendering using syntax  familiar to many developers. It is similar in appearance to HTML.  
+      
+    JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes it easier to write and add HTML in React.  
+      
+    Thus, JSX is an syntax extension for javascript, and its a html with a crown of Javascript,  
+    React provide developers easy to write coding features by bringing JSX, we don't seperate files for  
+    HTML, CSS, JS etc, all should be compressed as an when required, that can be done using JSX.  
+      
+    Thus, in App.js, in the return () statement, inner code which looks like html is all JSX, so JSX is essentially  
+    90% HTML only with some added code for JS.  
+      
+    All the JSX should be written in an enclosing tag, by default done by <div></div>,  
+    if we want to add extra tags over it, we use JSX fragment <></> as the enclosing tags.  
+      
+    NOTE: in JSX class is replaced with className, and for is replaced with htmlFor.  
+      
+    NOTE: emmet in settings, add javascript as key and value as javascriptreact, so when we are using javascript  
+    we will get suggestions for javascriptreact.  
+    ie: if we write div.blank and hit enter then we will get the div with className = blank.  
+      
+    The concept that compiles the JSX syntax is the babel, it compiles it the React.createElement() calls,  
+    internally when the compilation is done, the JSX is expanded into React.createElement().  
+      
+    For us it's easy to write JSX instead of React.createElement() each time.  
+      
+    
+      
+    
+    
+
     
 
 
